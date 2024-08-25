@@ -26,6 +26,7 @@
 		B7D769FD2C754ABD005760D6 /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D769FC2C754ABD005760D6 /* CoinImageView.swift */; };
 		B7D769FF2C754CE3005760D6 /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D769FE2C754CE3005760D6 /* CoinImageService.swift */; };
 		B7D76A012C754EB7005760D6 /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D76A002C754EB7005760D6 /* CoinImageViewModel.swift */; };
+		B7DF8C222C76169A00DDAE6D /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = B7DF8C212C76169A00DDAE6D /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7DF8C222C76169A00DDAE6D /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +218,9 @@
 			dependencies = (
 			);
 			name = "Crypto-App-SwiftUI";
+			packageProductDependencies = (
+				B7DF8C212C76169A00DDAE6D /* SDWebImageSwiftUI */,
+			);
 			productName = "Crypto-App-SwiftUI";
 			productReference = B79288962C72357500D4D918 /* Crypto-App-SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -244,6 +249,9 @@
 				Base,
 			);
 			mainGroup = B792888D2C72357500D4D918;
+			packageReferences = (
+				B7DF8C202C76169A00DDAE6D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = B79288972C72357500D4D918 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -494,6 +502,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B7DF8C202C76169A00DDAE6D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B7DF8C212C76169A00DDAE6D /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7DF8C202C76169A00DDAE6D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B792888E2C72357500D4D918 /* Project object */;
 }
