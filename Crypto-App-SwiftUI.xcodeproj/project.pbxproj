@@ -21,6 +21,12 @@
 		B79288B92C723D5500D4D918 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79288B82C723D5500D4D918 /* CircleButtonView.swift */; };
 		B79288BB2C7241E200D4D918 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79288BA2C7241E200D4D918 /* CircleButtonAnimationView.swift */; };
 		B7BDDFB62C7294E300CA7FBD /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BDDFB52C7294E300CA7FBD /* CoinModel.swift */; };
+		B7D769F72C7537D6005760D6 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D769F62C7537D6005760D6 /* CoinDataService.swift */; };
+		B7D769FA2C754151005760D6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D769F92C754151005760D6 /* NetworkManager.swift */; };
+		B7D769FD2C754ABD005760D6 /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D769FC2C754ABD005760D6 /* CoinImageView.swift */; };
+		B7D769FF2C754CE3005760D6 /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D769FE2C754CE3005760D6 /* CoinImageService.swift */; };
+		B7D76A012C754EB7005760D6 /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D76A002C754EB7005760D6 /* CoinImageViewModel.swift */; };
+		B7DF8C222C76169A00DDAE6D /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = B7DF8C212C76169A00DDAE6D /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +45,11 @@
 		B79288B82C723D5500D4D918 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		B79288BA2C7241E200D4D918 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 		B7BDDFB52C7294E300CA7FBD /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		B7D769F62C7537D6005760D6 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
+		B7D769F92C754151005760D6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B7D769FC2C754ABD005760D6 /* CoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageView.swift; sourceTree = "<group>"; };
+		B7D769FE2C754CE3005760D6 /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
+		B7D76A002C754EB7005760D6 /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7DF8C222C76169A00DDAE6D /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,8 +85,10 @@
 			children = (
 				B79288992C72357500D4D918 /* Crypto_App_SwiftUIApp.swift */,
 				B792889B2C72357500D4D918 /* ContentView.swift */,
-				B7BDDFB42C7294D200CA7FBD /* Models */,
+				B7D769F82C753F74005760D6 /* Utilities */,
 				B79288AB2C72394000D4D918 /* Extensions */,
+				B7D769F52C753750005760D6 /* Services */,
+				B7BDDFB42C7294D200CA7FBD /* Models */,
 				B79288AE2C723B9F00D4D918 /* Core */,
 				B79288A72C72383600D4D918 /* Assets.xcassets */,
 				B79288A92C72387700D4D918 /* Colors.xcassets */,
@@ -139,6 +153,7 @@
 		B79288B42C723D1600D4D918 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B7D769FB2C754AA8005760D6 /* CoinImage */,
 				B79288B52C723D3000D4D918 /* CircleButton */,
 			);
 			path = Components;
@@ -161,6 +176,32 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		B7D769F52C753750005760D6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B7D769F62C7537D6005760D6 /* CoinDataService.swift */,
+				B7D769FE2C754CE3005760D6 /* CoinImageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B7D769F82C753F74005760D6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B7D769F92C754151005760D6 /* NetworkManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B7D769FB2C754AA8005760D6 /* CoinImage */ = {
+			isa = PBXGroup;
+			children = (
+				B7D769FC2C754ABD005760D6 /* CoinImageView.swift */,
+				B7D76A002C754EB7005760D6 /* CoinImageViewModel.swift */,
+			);
+			path = CoinImage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,6 +218,9 @@
 			dependencies = (
 			);
 			name = "Crypto-App-SwiftUI";
+			packageProductDependencies = (
+				B7DF8C212C76169A00DDAE6D /* SDWebImageSwiftUI */,
+			);
 			productName = "Crypto-App-SwiftUI";
 			productReference = B79288962C72357500D4D918 /* Crypto-App-SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -205,6 +249,9 @@
 				Base,
 			);
 			mainGroup = B792888D2C72357500D4D918;
+			packageReferences = (
+				B7DF8C202C76169A00DDAE6D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = B79288972C72357500D4D918 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,16 +279,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7D769F72C7537D6005760D6 /* CoinDataService.swift in Sources */,
 				B792889C2C72357500D4D918 /* ContentView.swift in Sources */,
 				B721DE3A2C7392A5003851BA /* HomeViewModel.swift in Sources */,
+				B7D769FA2C754151005760D6 /* NetworkManager.swift in Sources */,
 				B79288B32C723BF100D4D918 /* HomeView.swift in Sources */,
+				B7D769FD2C754ABD005760D6 /* CoinImageView.swift in Sources */,
 				B792889A2C72357500D4D918 /* Crypto_App_SwiftUIApp.swift in Sources */,
 				B79288B92C723D5500D4D918 /* CircleButtonView.swift in Sources */,
 				B79288AD2C72395D00D4D918 /* Color.swift in Sources */,
 				B721DE342C7383CD003851BA /* PreviewProvider.swift in Sources */,
 				B79288BB2C7241E200D4D918 /* CircleButtonAnimationView.swift in Sources */,
+				B7D76A012C754EB7005760D6 /* CoinImageViewModel.swift in Sources */,
 				B7BDDFB62C7294E300CA7FBD /* CoinModel.swift in Sources */,
 				B721DE382C73881F003851BA /* Double.swift in Sources */,
+				B7D769FF2C754CE3005760D6 /* CoinImageService.swift in Sources */,
 				B721DE362C7384AD003851BA /* CoinRowsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,6 +502,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B7DF8C202C76169A00DDAE6D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B7DF8C212C76169A00DDAE6D /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7DF8C202C76169A00DDAE6D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B792888E2C72357500D4D918 /* Project object */;
 }

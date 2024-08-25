@@ -28,9 +28,9 @@ struct CoinRowsView_Preview: PreviewProvider {
         Group {
             CoinRowsView(coin: dev.coin, showHoldingColum: true)
                 .previewLayout(.sizeThatFits)
-            CoinRowsView(coin: dev.coin, showHoldingColum: false)
-                .previewLayout(.sizeThatFits)
-                .preferredColorScheme(.dark)
+//            CoinRowsView(coin: dev.coin, showHoldingColum: false)
+//                .previewLayout(.sizeThatFits)
+//                .preferredColorScheme(.dark)
         }
     }
 }
@@ -42,8 +42,9 @@ extension CoinRowsView {
                 .font(.caption)
                 .foregroundColor(Color.theme.secondaryText)
                 .frame(minWidth: 30)
-            Circle()
+            CoinImageView(imageUrl: coin.image)
                 .frame(width: 30, height: 30)
+            
             Text(coin.symbol.uppercased())
                 .font(.headline)
                 .padding(.leading)
